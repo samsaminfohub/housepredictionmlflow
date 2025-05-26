@@ -13,7 +13,7 @@ from database import DatabaseManager
 from ml_model import HousingPredictor
 
 # Configuration MLflow
-mlflow.set_tracking_uri("http://mlflow:5000")
+mlflow.set_tracking_uri("http://http://20.36.136.43:5000")
 
 st.set_page_config(
     page_title="Prédiction Prix Immobilier",
@@ -247,7 +247,7 @@ def show_data_page(db):
 
 def show_mlflow_page():
     st.header("MLflow Tracking")
-    st.info("Interface MLflow disponible à: http://localhost:5000")
+    st.info("Interface MLflow disponible à: http://http://20.36.136.43:5000")
     
     # Tentative d'affichage des runs
     try:
